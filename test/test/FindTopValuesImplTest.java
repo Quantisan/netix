@@ -6,12 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FindTopValuesImplTest {
-	FindTopValuesImpl instance;
+	FindTopValues instance;
 	int[] arrEmpty, arrSingle, arrOverlap, arrNormal;
 	
 	@Before
 	public void setUp() throws Exception {
-		instance = new FindTopValuesImpl();
+		instance = FindTopValuesImpl.getInstance();
 		
 		arrSingle = new int[1];
 		arrSingle[0] = 10;

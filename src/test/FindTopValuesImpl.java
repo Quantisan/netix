@@ -4,6 +4,12 @@ import java.util.Arrays;
 import org.apache.commons.lang3.ArrayUtils;;
 
 public class FindTopValuesImpl implements FindTopValues {
+	private static final FindTopValuesImpl INSTANCE = new FindTopValuesImpl();
+	
+	private FindTopValuesImpl() {};
+	
+	public static FindTopValues getInstance() { return INSTANCE; };
+	
 	/* (non-Javadoc)
 	 * @see test.FindTopValues#findMaxValue(int[])
 	 * 
